@@ -25,6 +25,6 @@ import UIKit
 
 private extension AppDelegate {
     func setupDependencies() {
-        DependencyContainer[\.webservice] = Webservice()
+        DependencyContainer.setDependency(initialValue: Webservice(), key: WebserviceDependencyKey.self)
     }
 }
