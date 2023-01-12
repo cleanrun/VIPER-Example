@@ -12,7 +12,7 @@ final class MovieDetailInteractor: MovieDetailPresenterToInteractorProtocol {
     weak var presenter: MovieDetailInteractorToPresenterProtocol?
     
     func fetchMovieDetail(id: Int) {
-        let urlString = "https://api.themoviedb.org/3/movie/\(id)?api_key=e9325a84053f572e130d8028237ab315&language=en-US"
+        let urlString = "https://api.themoviedb.org/3/movie/\(id)?api_key=&language=en-US"
         Task {
             do {
                 let response = try await webservice.request(endpoint: urlString, type: MovieEntity.self)
