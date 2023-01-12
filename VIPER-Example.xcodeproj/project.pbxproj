@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB4281EA296FB8E100B308A1 /* DependencyKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4281E9296FB8E100B308A1 /* DependencyKey.swift */; };
+		AB4281EC296FB9A700B308A1 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4281EB296FB9A700B308A1 /* DependencyContainer.swift */; };
+		AB4281EE296FBA9100B308A1 /* Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4281ED296FBA9100B308A1 /* Dependency.swift */; };
 		AB6C6535296EFFE6000656C3 /* MovieListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C6534296EFFE6000656C3 /* MovieListCell.swift */; };
 		AB6C6537296F0621000656C3 /* MovieDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C6536296F0621000656C3 /* MovieDetailProtocols.swift */; };
 		AB6C6539296F062F000656C3 /* MovieDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C6538296F062F000656C3 /* MovieDetailInteractor.swift */; };
@@ -28,6 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB4281E9296FB8E100B308A1 /* DependencyKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyKey.swift; sourceTree = "<group>"; };
+		AB4281EB296FB9A700B308A1 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		AB4281ED296FBA9100B308A1 /* Dependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependency.swift; sourceTree = "<group>"; };
 		AB6C6534296EFFE6000656C3 /* MovieListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCell.swift; sourceTree = "<group>"; };
 		AB6C6536296F0621000656C3 /* MovieDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailProtocols.swift; sourceTree = "<group>"; };
 		AB6C6538296F062F000656C3 /* MovieDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailInteractor.swift; sourceTree = "<group>"; };
@@ -61,6 +67,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB4281E8296FB8C600B308A1 /* Dependency Injection */ = {
+			isa = PBXGroup;
+			children = (
+				AB4281E9296FB8E100B308A1 /* DependencyKey.swift */,
+				AB4281EB296FB9A700B308A1 /* DependencyContainer.swift */,
+				AB4281ED296FBA9100B308A1 /* Dependency.swift */,
+			);
+			path = "Dependency Injection";
+			sourceTree = "<group>";
+		};
 		ABFA9479296DB14F00F4D922 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +118,7 @@
 		ABFA949A296DB2D400F4D922 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				AB4281E8296FB8C600B308A1 /* Dependency Injection */,
 				ABFA949B296DB36000F4D922 /* Webservice.swift */,
 			);
 			path = Utilities;
@@ -221,9 +238,12 @@
 				ABFA94A7296DB6E500F4D922 /* MovieListInteractor.swift in Sources */,
 				AB6C653F296F0652000656C3 /* MovieDetailRouter.swift in Sources */,
 				ABFA94AD296DB70000F4D922 /* MovieListRouter.swift in Sources */,
+				AB4281EA296FB8E100B308A1 /* DependencyKey.swift in Sources */,
 				ABFA94A1296DB5EC00F4D922 /* MovieEntity.swift in Sources */,
 				ABFA949C296DB36000F4D922 /* Webservice.swift in Sources */,
+				AB4281EC296FB9A700B308A1 /* DependencyContainer.swift in Sources */,
 				AB6C653D296F0646000656C3 /* MovieDetailPresenter.swift in Sources */,
+				AB4281EE296FBA9100B308A1 /* Dependency.swift in Sources */,
 				AB6C6539296F062F000656C3 /* MovieDetailInteractor.swift in Sources */,
 				ABFA9488296DB14F00F4D922 /* SceneDelegate.swift in Sources */,
 				ABFA94A9296DB6EC00F4D922 /* MovieListViewController.swift in Sources */,

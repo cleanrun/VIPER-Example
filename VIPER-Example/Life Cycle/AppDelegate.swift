@@ -11,6 +11,7 @@ import UIKit
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        setupDependencies()
         return true
     }
 
@@ -22,3 +23,8 @@ import UIKit
 
 }
 
+private extension AppDelegate {
+    func setupDependencies() {
+        DependencyContainer[\.webservice] = Webservice()
+    }
+}

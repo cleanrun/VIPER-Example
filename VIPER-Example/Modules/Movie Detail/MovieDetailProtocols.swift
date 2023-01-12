@@ -28,6 +28,7 @@ protocol MovieDetailPresenterToRouterProtocol: AnyObject {
 }
 
 protocol MovieDetailPresenterToInteractorProtocol: AnyObject {
+    var webservice: Webservice { get }
     var presenter: MovieDetailInteractorToPresenterProtocol? { get set }
     
     func fetchMovieDetail(id: Int)

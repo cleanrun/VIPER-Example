@@ -28,6 +28,7 @@ protocol MovieListPresenterToRouterProtocol: AnyObject {
 }
 
 protocol MovieListPresenterToInteractorProtocol: AnyObject {
+    var webservice: Webservice { get }
     var presenter: MovieListInteractorToPresenterProtocol? { get set }
     
     func fetchMovieList()
